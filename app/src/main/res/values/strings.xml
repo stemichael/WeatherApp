@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Weather</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_bar_search">search</string>
+
+    <!-- Put your own APP ID here -->
+    <string name="open_weather_maps_app_id">6a76ab9c737c66ec40c870d611cfe3ac</string>
+
+    <string name="weather_sunny">&#xf00d;</string>
+    <string name="weather_clear_night">&#xf02e;</string>
+
+    <string name="weather_foggy">&#xf014;</string>
+    <string name="weather_cloudy">&#xf013;</string>
+    <string name="weather_rainy">&#xf019;</string>
+    <string name="weather_snowy">&#xf01b;</string>
+    <string name="weather_thunder">&#xf01e;</string>
+    <string name="weather_drizzle">&#xf01c;</string>
+
+    <string name="place_not_found">Not a valid City!</string>
+
+    <string name="title_activity_maps">Map</string>
+    <string name="add_city">Add City</string>
+    <string name="city_name">City Name</string>
+    <string name="weather">Weather</string>
+    <string name="wikipedia">Wikipedia</string>
+    <string name="add_cities">NO CITIES ADDED</string>
+    <string name="weather_menu">Weather Menu</string>
+    <string name="weather_icon" />
+    <string name="no_home_set">NO HOME SET</string>
+    <string name="no_connection_found">CHECK YOUR CONNECTION</string>
+</resources>

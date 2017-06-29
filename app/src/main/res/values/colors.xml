@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#4687f3</color>
+
+    <!-- color palette -->
+    <color name="gray">#96747474</color>
+    <color name="dark_blue">#4c78f5</color>
+    <color name="white">#ffffff</color>
+    <color name="mild_grey">#f5f5f5</color>
+
+    <color name="backgroundTextColor">@color/gray</color>
+    <color name="shadowTextColor">@color/dark_blue</color>
+    <color name="buttonTextColor">@color/white</color>
+    <color name="cardBackgroundColor">@color/white</color>
+
+</resources>
