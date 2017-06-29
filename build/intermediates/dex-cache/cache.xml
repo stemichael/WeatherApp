@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmich\.android\build-cache\3b9b6cccc6d8c09158dd2d6cef37b2dd21c95eea\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4b70c5ad05857b8b3b2458777e1b489a96d82f05">
+        <dex dex="C:\Users\dmich\Desktop\WeatherApp\app\build\intermediates\pre-dexed\debug\classes_d41942eac43e08c10621e3e3ac3190a680451f82.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmich\.gradle\caches\modules-2\files-2.1\org.reactivestreams\reactive-streams\1.0.0\14b8c877d98005ba3941c9257cfe09f6ed0e0d74\reactive-streams-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="14b8c877d98005ba3941c9257cfe09f6ed0e0d74">
+        <dex dex="C:\Users\dmich\Desktop\WeatherApp\app\build\intermediates\pre-dexed\debug\reactive-streams-1.0.0_25ad0b8391ab4e347a7e001dac07f51f4f9f74c8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmich\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="C:\Users\dmich\Desktop\WeatherApp\app\build\intermediates\pre-dexed\debug\support-annotations-25.2.0_74e0d245edc131fb57d2ddb5b0ef0ef2f057baed.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmich\.android\build-cache\cc36c239612a1a22ff6e8c9096bb0a9f31b76959\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6178e31397c24ab1bfc09766832cdcf519621eb7">
+        <dex dex="C:\Users\dmich\Desktop\WeatherApp\app\build\intermediates\pre-dexed\debug\classes_5f8bfd6fcaf117838c228f95104c183ce05764d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmich\.android\build-cache\670f46a415b41c4b630b7713b8e5da6aa57e3d23\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="C:\Users\dmich\Desktop\WeatherApp\app\build\intermediates\pre-dexed\debug\classes_04d5f5fe4bdc48ff9190a9e4a10e9b303c20fec2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmich\.android\build-cache\20320e1b82f00dc4ee1140a4b0b01163f3841830\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="C:\Users\dmich\Desktop\WeatherApp\app\build\intermediates\pre-dexed\debug\classes_0bd34fa32f4f008c7df1bb648b56436779c7ba9d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmich\.android\build-cache\7da8065a5e2323cafadec0b996b52b8c9e2b6341\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d695dc4247690369d66c022c6d18190155c61fcd">
+        <dex dex="C:\Users\dmich\Desktop\WeatherApp\app\build\intermediates\pre-dexed\debug\classes_c1818670561b4e197eefd6c6f06c684621195f57.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmich\.android\build-cache\108a56802b6da53d69c756d355d26091918cc581\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\dmich\Desktop\WeatherApp\app\build\intermediates\pre-dexed\debug\classes_0901c9bf2aa8d9ceeee32e680bf725d59e5863ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmich\.gradle\caches\modules-2\files-2.1\io.reactivex.rxjava2\rxjava\2.1.0\2fdf84dedcaaeabb9d70cde9dbb8aad4eccb80a1\rxjava-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2fdf84dedcaaeabb9d70cde9dbb8aad4eccb80a1">
+        <dex dex="C:\Users\dmich\Desktop\WeatherApp\app\build\intermediates\pre-dexed\debug\rxjava-2.1.0_5d6e44683d61f5653b8498f04b12a8c744dc3bb6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmich\.android\build-cache\d608acfeff3826651bfe4e48f1997a9599b2256a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="C:\Users\dmich\Desktop\WeatherApp\app\build\intermediates\pre-dexed\debug\classes_560b93d64c6d2f330b771d5d2839c9b8b885b45f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmich\.android\build-cache\c738b949b84ed3f2e97ac9eb198858fb2702ac47\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e412e954a24c5310a459c09870e4e2081aceb03">
+        <dex dex="C:\Users\dmich\Desktop\WeatherApp\app\build\intermediates\pre-dexed\debug\classes_291d2b12207a3567903705ea252d0908fd3ab76b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmich\.android\build-cache\620ff6112a2f6443488850b48ef4c0eba528861e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4119ea97a7191ff9b8f33b534ea220448f62f491">
+        <dex dex="C:\Users\dmich\Desktop\WeatherApp\app\build\intermediates\pre-dexed\debug\classes_69acd9983180a19d7dc399c491b6344a3d4c78ec.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmich\.android\build-cache\11a1c7c4862e09c64dc105fb9783f0f376b9c431\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="C:\Users\dmich\Desktop\WeatherApp\app\build\intermediates\pre-dexed\debug\classes_a19cff14c770bba59caf3e9c4e09b6cf8656a05e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmich\.android\build-cache\0898530ea5e8e70874f1cee774c917b6d9772098\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="C:\Users\dmich\Desktop\WeatherApp\app\build\intermediates\pre-dexed\debug\classes_2753eecb5a07632419416e4a9abfb6cfe82a31cd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmich\.android\build-cache\20602cdf16257c82a06c713cb717f45a141a8798\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="C:\Users\dmich\Desktop\WeatherApp\app\build\intermediates\pre-dexed\debug\classes_00422cadd3ba0b76c18d7c3a63a37a792773947e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmich\.android\build-cache\a12891242e0b57c76a55733cf7aadf8b959f0360\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="C:\Users\dmich\Desktop\WeatherApp\app\build\intermediates\pre-dexed\debug\classes_6b0902cbf9dbd1d463fb3d45afb83e021d7a9193.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmich\.android\build-cache\4e96d97d64dd007d06793d0602e59f87d0c73e01\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="21160c044ba984fb2e33b833c89a496becb85cfd">
+        <dex dex="C:\Users\dmich\Desktop\WeatherApp\app\build\intermediates\pre-dexed\debug\classes_0264921791a31cb6940abd2540bb0e971c225897.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\dmich\.android\build-cache\26eebd81d974c80c1edb1a42e466efa8675d8c79\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="C:\Users\dmich\Desktop\WeatherApp\app\build\intermediates\pre-dexed\debug\classes_eec4dc138b8b72b2a2411d282a49baf7f91a93f8.jar" />
+    </item>
+
+</items>
