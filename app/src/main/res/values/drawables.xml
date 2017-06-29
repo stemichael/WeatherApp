@@ -1,4 +1,3 @@
 <resources>
     <item name="ic_menu_favourite" type="drawable"></item>
-    <item name="ic_action_delete" type="drawable"></item>
 </resources>

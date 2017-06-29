@@ -9,8 +9,6 @@
     android:minHeight="?android:attr/listPreferredItemHeight"
     android:paddingBottom="27dp"
     android:paddingEnd="?android:listPreferredItemPaddingEnd"
-    android:paddingLeft="?android:listPreferredItemPaddingLeft"
-    android:paddingRight="?android:listPreferredItemPaddingRight"
     android:paddingStart="?android:listPreferredItemPaddingStart"
     android:paddingTop="27dp"
     android:textAppearance="?android:attr/textAppearanceListItemSmall"

@@ -33,7 +33,7 @@ public class ListCitiesFragment extends Fragment {
 
     private View myView;
     private ListView listView;
-    private TextView textView;
+    private TextView noCitiesAddedInTheListText;
     private FloatingActionButton addCityButton;
     private ArrayList<String> list_items = new ArrayList<>();
     private int counter = 0;
@@ -43,7 +43,7 @@ public class ListCitiesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         myView = inflater.inflate(R.layout.list_cities, container, false);
         listView = (ListView) myView.findViewById(R.id.listView);
-        textView = (TextView) myView.findViewById(R.id.noCitiesText);
+        noCitiesAddedInTheListText = (TextView) myView.findViewById(R.id.noCitiesText);
         addCityButton = (FloatingActionButton) myView.findViewById(R.id.fab_add);
         setHasOptionsMenu(true);
         return myView;
@@ -70,7 +70,7 @@ public class ListCitiesFragment extends Fragment {
         final String[] titles = new String[numOfRows];
 
         if (cursor.moveToFirst()) {
-            textView.setVisibility(View.INVISIBLE);
+            noCitiesAddedInTheListText.setVisibility(View.INVISIBLE);
             int columnTitleIndex = cursor.getColumnIndex("title");
             for (int i = 0; i < numOfRows; i++) {
                 titles[i] = cursor.getString(columnTitleIndex);
@@ -78,13 +78,13 @@ public class ListCitiesFragment extends Fragment {
             }
             cursor.close();
         } else {
-            textView.setVisibility(View.VISIBLE);
+            noCitiesAddedInTheListText.setVisibility(View.VISIBLE);
         }
 
         Arrays.sort(titles);
 
         final ArrayAdapter arrayAdapter = new ArrayAdapter<>(this.getActivity(),
-                R.layout.simple_list_item_activated_1m, titles);
+                R.layout.list_adapter, titles);
         listView.setAdapter(arrayAdapter);
 
 
@@ -105,9 +105,7 @@ public class ListCitiesFragment extends Fragment {
 
             @Override
             public boolean onCreateActionMode(ActionMode mode, Menu menu) {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    ListCitiesFragment.this.getActivity().getWindow().setStatusBarColor(Color.parseColor("#303F9F"));
-                }
+                ListCitiesFragment.this.getActivity().getWindow().setStatusBarColor(Color.parseColor("#303F9F"));
 
                 android.view.MenuInflater inflater = getActivity().getMenuInflater();
                 inflater.inflate(R.menu.delete, menu);
