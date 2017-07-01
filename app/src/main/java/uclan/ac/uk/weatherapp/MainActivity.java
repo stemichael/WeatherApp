@@ -19,6 +19,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
 import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 import uclan.ac.uk.weatherapp.broadcast.receiver.CheckConnectivity;
 
@@ -26,33 +27,17 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private NavigationView navigationView;
+    private Disposable subscription;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        View noConnectionLayout = findViewById(R.id.connection_check_layout);
-        View contentFrameLayout = findViewById(R.id.content_frame);
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
-        registerReceiver(new CheckConnectivity(), new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION));
-        CheckConnectivity.getNetworkStateChange()
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(isNetworkNotConnected -> {
-                    if (isNetworkNotConnected) {
-                        noConnectionLayout.setVisibility(View.VISIBLE);
-                        contentFrameLayout.setVisibility(View.INVISIBLE);
-                    } else {
-                        noConnectionLayout.setVisibility(View.INVISIBLE);
-                        contentFrameLayout.setVisibility(View.VISIBLE);
-                    }
-                });
-
+        handleOfflineMode();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -79,7 +64,27 @@ public class MainActivity extends AppCompatActivity
         setFragment();
     }
 
-    public void setFragment() {
+    private void handleOfflineMode() {
+        final View noConnectionLayout = findViewById(R.id.connection_check_layout);
+        final View contentFrameLayout = findViewById(R.id.content_frame);
+
+        final CheckConnectivity checkConnectivity = new CheckConnectivity();
+        registerReceiver(checkConnectivity, new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION));
+        subscription = checkConnectivity.getNetworkStateChange()
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(isNetworkNotConnected -> {
+                    if (isNetworkNotConnected) {
+                        noConnectionLayout.setVisibility(View.VISIBLE);
+                        contentFrameLayout.setVisibility(View.INVISIBLE);
+                    } else {
+                        noConnectionLayout.setVisibility(View.INVISIBLE);
+                        contentFrameLayout.setVisibility(View.VISIBLE);
+                    }
+                });
+    }
+
+    final public void setFragment() {
         FragmentManager fragmentManager = getFragmentManager();
 
         fragmentManager.beginTransaction()
@@ -163,5 +168,14 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    protected void onDestroy() {
+        if (subscription != null && !subscription.isDisposed()) {
+            subscription.dispose();
+        }
+
+        super.onDestroy();
     }
 }

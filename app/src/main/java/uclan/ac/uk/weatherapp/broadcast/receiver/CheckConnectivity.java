@@ -11,7 +11,7 @@ import io.reactivex.subjects.PublishSubject;
 
 
 public class CheckConnectivity extends BroadcastReceiver {
-    private static final PublishSubject<Boolean> onNetworkStateChange = PublishSubject.create();
+    private final PublishSubject<Boolean> onNetworkStateChange = PublishSubject.create();
 
     @Override
     public void onReceive(Context context, Intent arg1) {
@@ -22,7 +22,7 @@ public class CheckConnectivity extends BroadcastReceiver {
         onNetworkStateChange.onNext(isNotConnected);
     }
 
-    public static Observable<Boolean> getNetworkStateChange() {
+    public Observable<Boolean> getNetworkStateChange() {
         return onNetworkStateChange.hide();
     }
 }
